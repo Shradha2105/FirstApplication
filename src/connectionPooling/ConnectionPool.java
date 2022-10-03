@@ -87,7 +87,6 @@ public class ConnectionPool implements Runnable {
                         wait();
                   } catch (InterruptedException ie) {
                   }
-                  //new comment
                   // Someone freed up a connection, so try again.
                   return (getConnection());
            }
